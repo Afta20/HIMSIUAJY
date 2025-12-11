@@ -22,7 +22,7 @@ export default function EventsPage() {
       image: "/dummy-event.jpg"
     },
     {
-      title: "Responsi UAS: Algoritma & Pemrograman",
+      title: "Tentoring UAS: Algoritma & Pemrograman",
       date: "10 Desember 2025",
       location: "Online (Ms. Teams)",
       category: "Akademik",
@@ -38,7 +38,7 @@ export default function EventsPage() {
     {
       title: "Workshop UI/UX Design with Figma",
       date: "05 Oktober 2025",
-      location: "Lab Komputer 3",
+      location: "Lab Jaringan Komputer",
       category: "Akademik",
       image: "/dummy-event.jpg"
     },
@@ -52,7 +52,7 @@ export default function EventsPage() {
     {
       title: "Study Group: Intro to Data Science",
       date: "Setiap Jumat",
-      location: "Coworking Space",
+      location: "RPB",
       category: "Akademik",
       image: "/dummy-event.jpg"
     },
