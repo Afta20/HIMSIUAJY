@@ -1,34 +1,40 @@
 // src/app/about-us/page.tsx
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
-import { Users, Target, Zap, Heart } from "lucide-react";
+import { Users, Target, Zap, Heart, DollarSign } from "lucide-react"; // Tambah DollarSign untuk USDA
 
 export default function AboutUs() {
-  // Data Dummy Divisi (Nanti bisa diganti)
+  // Data Divisi UPDATED: PH, KOMINFO, PSDM, SOSHUM, USDA
   const divisions = [
     {
-      name: "BPH (Badan Pengurus Harian)",
-      desc: "Otak penggerak organisasi yang mengkoordinasikan seluruh visi dan arah gerak HIMSI.",
+      name: "PH (Pengurus Harian)",
+      desc: "Otak penggerak organisasi yang terdiri dari Ketua, Wakil, Sekretaris, dan Bendahara untuk mengkoordinasikan seluruh arah gerak HIMSI.",
       icon: <Users size={32} className="text-white" />,
       color: "bg-himsi-red"
     },
     {
-      name: "Divisi Kominfo",
-      desc: "Ujung tombak branding, publikasi konten kreatif, dan pengelolaan aset digital HIMSI.",
+      name: "Divisi KOMINFO",
+      desc: "Ujung tombak branding, publikasi konten kreatif, dokumentasi event, dan pengelolaan aset digital HIMSI di media sosial.",
       icon: <Zap size={32} className="text-white" />,
-      color: "bg-orange-500" // Warna pembeda dikit
+      color: "bg-orange-500"
     },
     {
       name: "Divisi PSDM",
-      desc: "Fokus pada pengembangan karakter, skill, dan kaderisasi anggota serta pengurus.",
+      desc: "Fokus pada pengembangan sumber daya manusia, bonding internal, serta kaderisasi untuk mencetak penerus himpunan yang berkualitas.",
       icon: <Target size={32} className="text-white" />,
       color: "bg-blue-600"
     },
     {
-      name: "Divisi Humas",
-      desc: "Jembatan penghubung antara HIMSI dengan pihak eksternal, alumni, dan jurusan lain.",
+      name: "Divisi SOSHUM",
+      desc: "Bergerak di bidang Sosial & Humaniora. Menjadi jembatan kepedulian mahasiswa SI terhadap masyarakat sekitar dan isu-isu sosial.",
       icon: <Heart size={32} className="text-white" />,
       color: "bg-pink-500"
+    },
+    {
+      name: "Divisi USDA",
+      desc: "Usaha Dana. Bertanggung jawab mencari pemasukan mandiri melalui penjualan merchandise (Danus) dan kemitraan kreatif.",
+      icon: <DollarSign size={32} className="text-white" />,
+      color: "bg-green-600" // Warna Hijau (Identik dengan uang/dana)
     }
   ];
 
@@ -102,9 +108,10 @@ export default function AboutUs() {
             <div className="w-20 h-1 bg-himsi-yellow mx-auto mt-4 rounded-full"></div>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          {/* Grid responsif: Mobile 1 kolom, Laptop 3 kolom (karena ada 5 item, baris kedua otomatis tengah) */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 justify-center">
             {divisions.map((div, index) => (
-              <div key={index} className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-lg transition-all border-t-4 border-transparent hover:border-himsi-red group">
+              <div key={index} className="bg-white p-6 rounded-2xl shadow-sm hover:shadow-lg transition-all border-t-4 border-transparent hover:border-himsi-red group flex flex-col items-start h-full">
                 <div className={`${div.color} w-14 h-14 rounded-xl flex items-center justify-center mb-6 shadow-md group-hover:scale-110 transition-transform`}>
                   {div.icon}
                 </div>
