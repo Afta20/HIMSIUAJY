@@ -64,9 +64,11 @@ export default function Navbar() {
 
           {/* CTA Button */}
           <div className="hidden md:flex">
-            <button className="bg-himsi-red hover:bg-red-700 text-white px-6 py-2.5 rounded-full font-semibold transition-all shadow-lg shadow-red-200">
-              Join Us
-            </button>
+          <Link href="/join-us"> 
+          <button className="bg-himsi-red hover:bg-red-700 text-white px-6 py-2.5 rounded-full font-semibold transition-all shadow-lg shadow-red-200">
+          Join Us
+          </button>
+          </Link>
           </div>
 
           {/* Mobile Menu Button */}
