@@ -1,7 +1,7 @@
-// src/app/layout.tsx
 import type { Metadata } from "next";
 import "./globals.css";
 import IntroLoader from "@/components/IntroLoader";
+import ChatBot from "@/components/ChatBot"; 
 
 export const metadata: Metadata = {
   title: "HIMSI UAJY",
@@ -15,12 +15,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="id">
-      <body 
-        className="antialiased bg-white text-gray-900"
-        suppressHydrationWarning={true}
-      >
+      <body className="antialiased bg-white text-gray-900" suppressHydrationWarning={true}>
         <IntroLoader />
         {children}
+      
+        <ChatBot />
       </body>
     </html>
   );
