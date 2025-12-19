@@ -7,17 +7,17 @@ export default function Home() {
   // Data Dummy Event (Nanti bisa diganti database)
   const events = [
     {
-      title: "MOPIS 2025: Moments Of Purpose Information System",
-      date: "25 Agustus 2025",
-      location: "Kampus 3 Gedung Bonaventura",
-      category: "Welcoming Party",
+      title: "HIMSI 2025: Welcoming Party",
+      date: "25 Oktober 2025",
+      location: "Gedung Bonaventura",
+      category: "Welcoming Party", 
       image: "/dummy-event.jpg"
     },
     {
-      title: "SI Fest: Technology & Art Summit",
-      date: "10 September 2025",
-      location: "Auditorium UAJY",
-      category: "Seminar & Workshop",
+      title: "Technolgy Art Summit 2025",
+      date: "15 Desember 2025",
+      location: "Online",
+      category: "Non-Akademik",
       image: "/dummy-event.jpg"
     },
     {
