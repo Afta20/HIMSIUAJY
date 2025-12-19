@@ -15,29 +15,29 @@ export default function EventsPage() {
   // Data Dummy Event (Lebih banyak)
   const allEvents = [
     {
-      title: "MOPIS 2025: Welcoming Party",
-      date: "25 Agustus 2025",
+      title: "HIMSI 2025: Welcoming Party",
+      date: "25 Oktober 2025",
       location: "Gedung Bonaventura",
-      category: "Non-Akademik", // Kategori ini penting buat filter
+      category: "Non-Akademik", 
       image: "/dummy-event.jpg"
     },
     {
-      title: "Tentoring UAS: Algoritma & Pemrograman",
+      title: "Tentoring UAS: Logika Informatika",
       date: "10 Desember 2025",
       location: "Online (Ms. Teams)",
       category: "Akademik",
       image: "/dummy-event.jpg"
     },
     {
-      title: "SI Fest: Tech Art Summit",
-      date: "15 September 2025",
-      location: "Auditorium UAJY",
+      title: "Technolgy Art Summit 2025",
+      date: "15 Desember 2025",
+      location: "Online",
       category: "Non-Akademik",
       image: "/dummy-event.jpg"
     },
     {
       title: "Workshop UI/UX Design with Figma",
-      date: "05 Oktober 2025",
+      date: "05 Desember 2025",
       location: "Lab Jaringan Komputer",
       category: "Akademik",
       image: "/dummy-event.jpg"
@@ -50,8 +50,8 @@ export default function EventsPage() {
       image: "/dummy-event.jpg"
     },
     {
-      title: "Study Group: Intro to Data Science",
-      date: "Setiap Jumat",
+      title: "Study Group: KSAD",
+      date: "Setiap Rabu",
       location: "RPB",
       category: "Akademik",
       image: "/dummy-event.jpg"

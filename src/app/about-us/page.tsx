@@ -34,7 +34,7 @@ export default function AboutUs() {
       name: "Divisi USDA",
       desc: "Usaha Dana. Bertanggung jawab mencari pemasukan mandiri melalui penjualan merchandise (Danus) dan kemitraan kreatif.",
       icon: <DollarSign size={32} className="text-white" />,
-      color: "bg-green-600" // Warna Hijau (Identik dengan uang/dana)
+      color: "bg-green-600" 
     }
   ];
 
